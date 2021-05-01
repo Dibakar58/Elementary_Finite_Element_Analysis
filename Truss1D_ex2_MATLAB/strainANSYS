@@ -1,0 +1,102 @@
+
+ PRINT EPEL ELEMENT SOLUTION PER ELEMENT
+ 
+ ***** POST1 ELEMENT NODAL ELASTIC STRAIN LISTING *****                        
+ 
+  LOAD STEP=     1  SUBSTEP=     1                                             
+   TIME=    1.0000      LOAD CASE=   0                                         
+ 
+  THE FOLLOWING X,Y,Z VALUES ARE IN GLOBAL COORDINATES                         
+ 
+  
+  ELEMENT=       1        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       1 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+       3 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       2        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       3 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+       4 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       3        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       4 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+       5 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       4        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       5 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+       6 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       5        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       6 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+       2 -0.45000E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       6        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       2  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+       8  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       7        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       8  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+       9  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+ 
+ ***** POST1 ELEMENT NODAL ELASTIC STRAIN LISTING *****                        
+ 
+  LOAD STEP=     1  SUBSTEP=     1                                             
+   TIME=    1.0000      LOAD CASE=   0                                         
+ 
+  THE FOLLOWING X,Y,Z VALUES ARE IN GLOBAL COORDINATES                         
+ 
+  
+  ELEMENT=       8        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       9  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+      10  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       9        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+      10  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+      11  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=      10        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+      11  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+       7  0.13333E-05  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=      11        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+       7  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+      13  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=      12        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+      13  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+      14  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=      13        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+      14  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+      15  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=      14        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+      15  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+      16  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+ 
+ ***** POST1 ELEMENT NODAL ELASTIC STRAIN LISTING *****                        
+ 
+  LOAD STEP=     1  SUBSTEP=     1                                             
+   TIME=    1.0000      LOAD CASE=   0                                         
+ 
+  THE FOLLOWING X,Y,Z VALUES ARE IN GLOBAL COORDINATES                         
+ 
+  
+  ELEMENT=      15        LINK180 
+    NODE    EPELX       EPELY       EPELZ       EPELXY      EPELYZ      EPELXZ  
+      16  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+      12  0.12000E-04  0.0000      0.0000      0.0000      0.0000      0.0000    
+
