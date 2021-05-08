@@ -1,0 +1,83 @@
+FINI
+/CLEAR,ALL,ALL
+/PREP7  
+
+L1 = 1
+L2 = 1   
+PI = ACOS(-1)
+          
+!! Define element type = link180
+ET,1,LINK180
+
+!! Define section type for two elements
+SECTYPE,1,LINK   	 ! Cross-section 1
+SECDATA, 0.1              ! AREA = 0.1 m2
+
+SECTYPE,2,LINK   	 ! Cross-section 2   
+SECDATA, 0.2              ! AREA = 0.2 m2
+
+
+!! Define keypoints
+K,1,0,0				! Keypoint 1: at 0,0
+K,2,L1*cos(pi/4),L1*sin(pi/4)	! Keypoint 2: at L1*cos(pi/4),L1*sin(pi/4)
+K,3,0,(L1+L2)*sin(pi/4)		! Keypoint 3: at 0,(L1+L2)*sin(pi/4)	
+
+
+!! Define material properties for two elements
+MP,EX,1,2E11		! Elastic modulus: E1 = 2e11
+MP,EX,2,70E9		! Elastic modulus: E2 = 70e9
+
+!! Draw lines
+Type,1		! element type = 1 = LINK180
+mat, 1		! material = 1
+secnum,1	! Section number = 1
+TSHAP,LINE
+L,1,2
+
+
+Type,1		! element type = 1 = LINK180
+mat, 2		! material = 2
+secnum,2	! Section number = 2
+TSHAP,LINE
+L,2,3
+
+
+!!!! Associates element attributes with the selected, unmeshed lines.
+!!!Using command: LATT, MAT, REAL, TYPE, --, KB, KE, SECNUM 
+!!! -> see: https://www.mm.bme.hu/~gyebro/files/ans_help_v182/ans_cmd/Hlp_C_LATT.html or ansys help file for details
+
+LSEL,S,LINE,,1
+LATT,1, ,1,, , ,1
+
+LSEL,S,LINE,,2
+LATT,2, ,1,, , ,2
+
+
+!! Meshing
+MSHKEY, 1 	! using Mapped meshing
+
+LSEL,S,LINE,,1
+Lesize, all,,,1	! mesh size: 1 element per line
+
+LSEL,S,LINE,,2
+Lesize, all,,,1	! mesh size: 1 element per line
+
+allsel,all
+Lmesh,all	! Line mesh for all model
+FINISH
+
+/SOLU
+
+D,all,uz,0	! uz = 0 for all nodes
+    
+D,1,all		! ux = uy = 0 for node 1
+D,3,all		! ux = uy = 0 for node 3
+
+F,2,FX,5e9		! Fx = 5e9 at node 2
+allsel,all
+
+F,2,FY,3e9		! Fy = 3e9 at node 2
+allsel,all
+
+solve
+FINISH			! Finishing solution
