@@ -1,0 +1,26 @@
+
+ PRINT S    ELEMENT SOLUTION PER ELEMENT
+ 
+ ***** POST1 ELEMENT NODAL STRESS LISTING *****                                
+ 
+  LOAD STEP=     1  SUBSTEP=     1                                             
+   TIME=    1.0000      LOAD CASE=   0                                         
+ 
+  THE FOLLOWING X,Y,Z VALUES ARE IN GLOBAL COORDINATES                         
+ 
+  
+  ELEMENT=       1        LINK180 
+    NODE    SX          SY          SZ          SXY         SYZ         SXZ     
+       1 -0.20000E+11  0.0000      0.0000      0.0000      0.0000      0.0000    
+       2 -0.20000E+11  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       2        LINK180 
+    NODE    SX          SY          SZ          SXY         SYZ         SXZ     
+       2 -0.20000E+11  0.0000      0.0000      0.0000      0.0000      0.0000    
+       3 -0.20000E+11  0.0000      0.0000      0.0000      0.0000      0.0000    
+  
+  ELEMENT=       3        LINK180 
+    NODE    SX          SY          SZ          SXY         SYZ         SXZ     
+       2  0.17321E+11  0.0000      0.0000      0.0000      0.0000      0.0000    
+       4  0.17321E+11  0.0000      0.0000      0.0000      0.0000      0.0000    
+
