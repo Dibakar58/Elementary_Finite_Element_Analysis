@@ -15,7 +15,7 @@ Hello there! If you are learning FEM from ground zero this is a great place for 
 ## Example 2
 
 
-![](Images/res.png)
+![](Images/Res.png)
 <br>
 ![](Images/2Dtruss2.png)
 
