@@ -17,7 +17,7 @@ Hello there! If you are learning FEM from ground zero this is a great place for 
 
 ![](Images/Res.png)
 <br>
-![](Images/2Dtruss2.png)
+![](Images/2dtruss2.png)
 
 # Finite Element Method- 2D Plate
 ## Example 1
